@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test5(failed)">
+    <classes>
+      <class name="com.qa.planfirmatechnologies.OrderFlow">
+        <methods>
+          <include name="addAllItems"/>
+          <include name="exitDriver"/>
+          <include name="placeOrder"/>
+          <include name="checkOut"/>
+          <include name="moveToFitnessEquipmentPage"/>
+          <include name="goToCreateAnAccountPage"/>
+          <include name="verifyOrderSummary"/>
+          <include name="driverSetup"/>
+          <include name="createNewAccount"/>
+          <include name="OrderConfirmation"/>
+          <include name="selectCategory"/>
+        </methods>
+      </class> <!-- com.qa.planfirmatechnologies.OrderFlow -->
+    </classes>
+  </test> <!-- Test5(failed) -->
+  <test thread-count="5" parallel="tests" name="Test(failed)">
+    <classes>
+      <class name="com.qa.planfirmatechnologies.OrderFlow">
+        <methods>
+          <include name="addAllItems"/>
+          <include name="exitDriver"/>
+          <include name="placeOrder"/>
+          <include name="checkOut"/>
+          <include name="moveToFitnessEquipmentPage"/>
+          <include name="goToCreateAnAccountPage"/>
+          <include name="verifyOrderSummary"/>
+          <include name="driverSetup"/>
+          <include name="createNewAccount"/>
+          <include name="OrderConfirmation"/>
+          <include name="selectCategory"/>
+        </methods>
+      </class> <!-- com.qa.planfirmatechnologies.OrderFlow -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test thread-count="5" parallel="tests" name="Test3(failed)">
+    <classes>
+      <class name="com.qa.planfirmatechnologies.OrderFlow">
+        <methods>
+          <include name="addAllItems"/>
+          <include name="exitDriver"/>
+          <include name="placeOrder"/>
+          <include name="checkOut"/>
+          <include name="moveToFitnessEquipmentPage"/>
+          <include name="goToCreateAnAccountPage"/>
+          <include name="verifyOrderSummary"/>
+          <include name="driverSetup"/>
+          <include name="createNewAccount"/>
+          <include name="OrderConfirmation"/>
+          <include name="selectCategory"/>
+        </methods>
+      </class> <!-- com.qa.planfirmatechnologies.OrderFlow -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+  <test thread-count="5" parallel="tests" name="Test4(failed)">
+    <classes>
+      <class name="com.qa.planfirmatechnologies.OrderFlow">
+        <methods>
+          <include name="addAllItems"/>
+          <include name="exitDriver"/>
+          <include name="placeOrder"/>
+          <include name="checkOut"/>
+          <include name="moveToFitnessEquipmentPage"/>
+          <include name="goToCreateAnAccountPage"/>
+          <include name="verifyOrderSummary"/>
+          <include name="driverSetup"/>
+          <include name="createNewAccount"/>
+          <include name="OrderConfirmation"/>
+          <include name="selectCategory"/>
+        </methods>
+      </class> <!-- com.qa.planfirmatechnologies.OrderFlow -->
+    </classes>
+  </test> <!-- Test4(failed) -->
+  <test thread-count="5" parallel="tests" name="Test2(failed)">
+    <classes>
+      <class name="com.qa.planfirmatechnologies.OrderFlow">
+        <methods>
+          <include name="addAllItems"/>
+          <include name="exitDriver"/>
+          <include name="placeOrder"/>
+          <include name="checkOut"/>
+          <include name="goToCreateAnAccountPage"/>
+          <include name="verifyOrderSummary"/>
+          <include name="driverSetup"/>
+          <include name="createNewAccount"/>
+          <include name="OrderConfirmation"/>
+        </methods>
+      </class> <!-- com.qa.planfirmatechnologies.OrderFlow -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
