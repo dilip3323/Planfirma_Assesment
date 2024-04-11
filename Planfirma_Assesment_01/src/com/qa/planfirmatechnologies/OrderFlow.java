@@ -33,7 +33,7 @@ public class OrderFlow {
 	public void driverSetup() {
 		ChromeOptions options = new ChromeOptions();
 	//	options.setExperimentalOption("debuggerAddress", "localhost:9222");
-	//	options.addArguments("--headless");
+		options.addArguments("--headless");
 		driver = new ChromeDriver(options);
 		
 
@@ -41,8 +41,7 @@ public class OrderFlow {
 		ac = new Actions(driver);
 		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\dilip\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\dilip\\Downloads\\chromedriver_win32\\chromedriver.exe");
 
 		driver.get("https://magento.softwaretestingboard.com/");
 		driver.manage().window().maximize();
