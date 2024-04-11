@@ -33,7 +33,7 @@ public class OrderFlow {
 	public void driverSetup() {
 		ChromeOptions options = new ChromeOptions();
 	//	options.setExperimentalOption("debuggerAddress", "localhost:9222");
-		options.addArguments("--headless");
+	//	options.addArguments("--headless");
 		driver = new ChromeDriver(options);
 		
 
