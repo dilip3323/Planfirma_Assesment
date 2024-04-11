@@ -33,7 +33,7 @@ public class OrderFlow {
 	public void driverSetup() {
 		ChromeOptions options = new ChromeOptions();
 	//	options.setExperimentalOption("debuggerAddress", "localhost:9222");
-		options.addArguments("--headless");
+	//	options.addArguments("--headless");
 		driver = new ChromeDriver(options);
 		
 
@@ -52,7 +52,7 @@ public class OrderFlow {
 	  
 	  driver.findElement(By.xpath("//div[@class='panel header']//a[normalize-space()='Create an Account']")).click();
 	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50)); // //
-	  String pageTitle = driver.getTitle(); 
+	 // String pageTitle = driver.getTitle(); 
 	  }
 	  
 	  @Test(dependsOnMethods = "goToCreateAnAccountPage") public void
