@@ -1,5 +1,7 @@
 package com.qa.planfirmatechnologies;
 
+import java.io.IOException;
+
 import java.time.Duration;
 
 import org.apache.commons.exec.util.StringUtils;
@@ -14,40 +16,29 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import net.bytebuddy.utility.RandomString;
 
 import org.openqa.selenium.support.ui.*;
 
-public class OrderFlow {
+@Listeners(CustomListner.class)
 
-	static WebDriver driver;
-	static JavascriptExecutor js;
-	static Actions ac;
-	WebDriverWait wait;
+
+public class OrderFlow extends BaseClass {
+
 
 	@BeforeTest
-	public void driverSetup() {
-		ChromeOptions options = new ChromeOptions();
-	//	options.setExperimentalOption("debuggerAddress", "localhost:9222");
-	//	options.addArguments("--headless");
-		driver = new ChromeDriver(options);
-		
-
-		js = ((JavascriptExecutor) driver);
-		ac = new Actions(driver);
-		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-		
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\dilip\\Downloads\\chromedriver_win32\\chromedriver.exe");
-
-		driver.get("https://magento.softwaretestingboard.com/");
-		driver.manage().window().maximize();
+	public void startTest() {
+		setupDriver();	
 	}
 	
-	  
+
 	  @Test(priority = 1) public void goToCreateAnAccountPage() {
 	  
 	  driver.findElement(By.xpath("//div[@class='panel header']//a[normalize-space()='Create an Account']")).click();
@@ -67,7 +58,7 @@ public class OrderFlow {
 	  driver.findElement(By.id("password-confirmation")).sendKeys("Dilip#4567");
 	  driver.findElement(By.xpath("//button[@class='action submit primary']")).click(); }
 	  
-	 
+
 
 	/*
 	 * @Test(priority = 1) public void login() throws InterruptedException {
@@ -103,7 +94,7 @@ public class OrderFlow {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 	}
-
+	
 	@Test(priority = 4)
 	public void addAllItems() throws InterruptedException {
 
@@ -273,6 +264,14 @@ public class OrderFlow {
 		Assert.assertEquals(orderConfirmation, orderMessage);
 	}
 
+	/*
+	 * @AfterMethod public void checkResult(ITestResult result) throws IOException {
+	 * if(result.getStatus() == ITestResult.FAILURE) {
+	 * failed(result.getMethod().getMethodName()); }
+	 * 
+	 * }
+	 */
+	
 	@AfterTest
 	public void exitDriver() {
 	driver.quit();

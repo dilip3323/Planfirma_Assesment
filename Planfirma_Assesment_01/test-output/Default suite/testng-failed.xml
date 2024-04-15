@@ -6,8 +6,8 @@
       <class name="com.qa.planfirmatechnologies.OrderFlow">
         <methods>
           <include name="exitDriver"/>
+          <include name="startTest"/>
           <include name="verifyOrderSummary"/>
-          <include name="driverSetup"/>
         </methods>
       </class> <!-- com.qa.planfirmatechnologies.OrderFlow -->
     </classes>

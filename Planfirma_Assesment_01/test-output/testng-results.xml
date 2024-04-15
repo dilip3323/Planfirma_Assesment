@@ -1,63 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
+<testng-results ignored="8" total="9" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-11T17:16:43 IST" name="Suite" finished-at="2024-04-11T17:18:18 IST" duration-ms="95132">
+  <suite started-at="2024-04-13T17:19:04 IST" name="Default suite" finished-at="2024-04-13T17:19:22 IST" duration-ms="18189">
     <groups>
     </groups>
-    <test started-at="2024-04-11T17:16:43 IST" name="Test" finished-at="2024-04-11T17:18:18 IST" duration-ms="95132">
+    <test started-at="2024-04-13T17:19:04 IST" name="Default test" finished-at="2024-04-13T17:19:22 IST" duration-ms="18189">
       <class name="com.qa.planfirmatechnologies.OrderFlow">
-        <test-method is-config="true" signature="driverSetup()[pri:0, instance:com.qa.planfirmatechnologies.OrderFlow@3fb1549b]" started-at="2024-04-11T17:16:43 IST" name="driverSetup" finished-at="2024-04-11T17:16:55 IST" duration-ms="12332" status="PASS">
+        <test-method is-config="true" signature="startTest()[pri:0, instance:com.qa.planfirmatechnologies.OrderFlow@483f6d77]" started-at="2024-04-13T17:19:04 IST" name="startTest" finished-at="2024-04-13T17:19:20 IST" duration-ms="15816" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- driverSetup -->
-        <test-method signature="goToCreateAnAccountPage()[pri:1, instance:com.qa.planfirmatechnologies.OrderFlow@3fb1549b]" started-at="2024-04-11T17:16:55 IST" name="goToCreateAnAccountPage" finished-at="2024-04-11T17:16:57 IST" duration-ms="1657" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToCreateAnAccountPage -->
-        <test-method signature="createNewAccount()[pri:0, instance:com.qa.planfirmatechnologies.OrderFlow@3fb1549b]" started-at="2024-04-11T17:16:57 IST" name="createNewAccount" finished-at="2024-04-11T17:17:01 IST" depends-on-methods="com.qa.planfirmatechnologies.OrderFlow.goToCreateAnAccountPage" duration-ms="3804" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createNewAccount -->
-        <test-method signature="moveToFitnessEquipmentPage()[pri:2, instance:com.qa.planfirmatechnologies.OrderFlow@3fb1549b]" started-at="2024-04-11T17:17:01 IST" name="moveToFitnessEquipmentPage" finished-at="2024-04-11T17:17:03 IST" duration-ms="1993" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- moveToFitnessEquipmentPage -->
-        <test-method signature="selectCategory()[pri:3, instance:com.qa.planfirmatechnologies.OrderFlow@3fb1549b]" started-at="2024-04-11T17:17:03 IST" name="selectCategory" finished-at="2024-04-11T17:17:05 IST" duration-ms="2383" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectCategory -->
-        <test-method signature="addAllItems()[pri:4, instance:com.qa.planfirmatechnologies.OrderFlow@3fb1549b]" started-at="2024-04-11T17:17:05 IST" name="addAllItems" finished-at="2024-04-11T17:17:17 IST" duration-ms="11773" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addAllItems -->
-        <test-method signature="checkOut()[pri:5, instance:com.qa.planfirmatechnologies.OrderFlow@3fb1549b]" started-at="2024-04-11T17:17:17 IST" name="checkOut" finished-at="2024-04-11T17:17:27 IST" duration-ms="10423" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkOut -->
-        <test-method signature="verifyOrderSummary()[pri:6, instance:com.qa.planfirmatechnologies.OrderFlow@3fb1549b]" started-at="2024-04-11T17:17:27 IST" name="verifyOrderSummary" finished-at="2024-04-11T17:18:02 IST" duration-ms="34290" status="FAIL">
+        </test-method> <!-- startTest -->
+        <test-method signature="verifyOrderSummary()[pri:6, instance:com.qa.planfirmatechnologies.OrderFlow@483f6d77]" started-at="2024-04-13T17:19:20 IST" name="verifyOrderSummary" finished-at="2024-04-13T17:19:20 IST" duration-ms="124" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='action primary action-save-address']"}
-  (Session info: chrome-headless-shell=123.0.6312.106)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='firstname']"}
+  (Session info: chrome=123.0.6312.106)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [66ab429787c4870ba0b63c4ebae5723d, findElement {using=xpath, value=//button[@class='action primary action-save-address']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\dilip\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50585}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50585/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 66ab429787c4870ba0b63c4ebae5723d]]>
+Command: [ab0a19d3bb727a0682bcbb829b0fb481, findElement {using=xpath, value=//input[@name='firstname']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\dilip\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53008}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53008/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ab0a19d3bb727a0682bcbb829b0fb481]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='action primary action-save-address']"}
-  (Session info: chrome-headless-shell=123.0.6312.106)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='firstname']"}
+  (Session info: chrome=123.0.6312.106)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [66ab429787c4870ba0b63c4ebae5723d, findElement {using=xpath, value=//button[@class='action primary action-save-address']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\dilip\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50585}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50585/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 66ab429787c4870ba0b63c4ebae5723d
+Command: [ab0a19d3bb727a0682bcbb829b0fb481, findElement {using=xpath, value=//input[@name='firstname']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\dilip\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53008}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53008/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ab0a19d3bb727a0682bcbb829b0fb481
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -74,7 +50,7 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at com.qa.planfirmatechnologies.OrderFlow.verifyOrderSummary(OrderFlow.java:236)
+at com.qa.planfirmatechnologies.OrderFlow.verifyOrderSummary(OrderFlow.java:160)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -109,19 +85,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOrderSummary -->
-        <test-method signature="placeOrder()[pri:7, instance:com.qa.planfirmatechnologies.OrderFlow@3fb1549b]" started-at="2024-04-11T17:18:02 IST" name="placeOrder" finished-at="2024-04-11T17:18:17 IST" duration-ms="15448" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- placeOrder -->
-        <test-method signature="OrderConfirmation()[pri:8, instance:com.qa.planfirmatechnologies.OrderFlow@3fb1549b]" started-at="2024-04-11T17:18:17 IST" name="OrderConfirmation" finished-at="2024-04-11T17:18:17 IST" duration-ms="30" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OrderConfirmation -->
-        <test-method is-config="true" signature="exitDriver()[pri:0, instance:com.qa.planfirmatechnologies.OrderFlow@3fb1549b]" started-at="2024-04-11T17:18:17 IST" name="exitDriver" finished-at="2024-04-11T17:18:18 IST" duration-ms="916" status="PASS">
+        <test-method is-config="true" signature="exitDriver()[pri:0, instance:com.qa.planfirmatechnologies.OrderFlow@483f6d77]" started-at="2024-04-13T17:19:20 IST" name="exitDriver" finished-at="2024-04-13T17:19:22 IST" duration-ms="1602" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exitDriver -->
       </class> <!-- com.qa.planfirmatechnologies.OrderFlow -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

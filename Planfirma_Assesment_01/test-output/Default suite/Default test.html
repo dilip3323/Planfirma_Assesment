@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Apr 10 10:20:18 IST 2024</td>
+<td>Started on:</td><td>Sat Apr 13 17:19:04 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>112 seconds (112833 ms)</td>
+<tr><td>Total time:</td><td>18 seconds (18189 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,15 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.qa.planfirmatechnologies.OrderFlow.verifyOrderSummary()'><b>verifyOrderSummary</b><br>Test class: com.qa.planfirmatechnologies.OrderFlow</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;action primary action-save-address&apos;]&quot;}
-  (Session info: chrome-headless-shell=123.0.6312.106)
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;firstname&apos;]&quot;}
+  (Session info: chrome=123.0.6312.106)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e82bc00dca580f4b16301601cddb02a0, findElement {using=xpath, value=//button[@class=&apos;action primary action-save-address&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.105 (399174dbe6e..., userDataDir: C:\Users\dilip\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:36436}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:36436/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e82bc00dca580f4b16301601cddb02a0
+Command: [ab0a19d3bb727a0682bcbb829b0fb481, findElement {using=xpath, value=//input[@name=&apos;firstname&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\dilip\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53008}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53008/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ab0a19d3bb727a0682bcbb829b0fb481
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -101,7 +101,7 @@ Session ID: e82bc00dca580f4b16301601cddb02a0
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at com.qa.planfirmatechnologies.OrderFlow.verifyOrderSummary(OrderFlow.java:236)
+	at com.qa.planfirmatechnologies.OrderFlow.verifyOrderSummary(OrderFlow.java:160)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -130,16 +130,16 @@ Session ID: e82bc00dca580f4b16301601cddb02a0
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace927159199", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace927159199'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;action primary action-save-address&apos;]&quot;}
-  (Session info: chrome-headless-shell=123.0.6312.106)
+</pre></div><a href='#' onClick='toggleBox("stack-trace169916747", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace169916747'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name=&apos;firstname&apos;]&quot;}
+  (Session info: chrome=123.0.6312.106)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e82bc00dca580f4b16301601cddb02a0, findElement {using=xpath, value=//button[@class=&apos;action primary action-save-address&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome-headless-shell, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.105 (399174dbe6e..., userDataDir: C:\Users\dilip\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:36436}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:36436/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e82bc00dca580f4b16301601cddb02a0
+Command: [ab0a19d3bb727a0682bcbb829b0fb481, findElement {using=xpath, value=//input[@name=&apos;firstname&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\dilip\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53008}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53008/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ab0a19d3bb727a0682bcbb829b0fb481
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -156,7 +156,7 @@ Session ID: e82bc00dca580f4b16301601cddb02a0
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at com.qa.planfirmatechnologies.OrderFlow.verifyOrderSummary(OrderFlow.java:236)
+	at com.qa.planfirmatechnologies.OrderFlow.verifyOrderSummary(OrderFlow.java:160)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -186,56 +186,8 @@ Session ID: e82bc00dca580f4b16301601cddb02a0
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>37</td>
-<td>com.qa.planfirmatechnologies.OrderFlow@3fb1549b</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.qa.planfirmatechnologies.OrderFlow.OrderConfirmation()'><b>OrderConfirmation</b><br>Test class: com.qa.planfirmatechnologies.OrderFlow</td>
-<td></td>
 <td>0</td>
-<td>com.qa.planfirmatechnologies.OrderFlow@3fb1549b</td></tr>
-<tr>
-<td title='com.qa.planfirmatechnologies.OrderFlow.addAllItems()'><b>addAllItems</b><br>Test class: com.qa.planfirmatechnologies.OrderFlow</td>
-<td></td>
-<td>14</td>
-<td>com.qa.planfirmatechnologies.OrderFlow@3fb1549b</td></tr>
-<tr>
-<td title='com.qa.planfirmatechnologies.OrderFlow.checkOut()'><b>checkOut</b><br>Test class: com.qa.planfirmatechnologies.OrderFlow</td>
-<td></td>
-<td>12</td>
-<td>com.qa.planfirmatechnologies.OrderFlow@3fb1549b</td></tr>
-<tr>
-<td title='com.qa.planfirmatechnologies.OrderFlow.createNewAccount()'><b>createNewAccount</b><br>Test class: com.qa.planfirmatechnologies.OrderFlow</td>
-<td></td>
-<td>4</td>
-<td>com.qa.planfirmatechnologies.OrderFlow@3fb1549b</td></tr>
-<tr>
-<td title='com.qa.planfirmatechnologies.OrderFlow.goToCreateAnAccountPage()'><b>goToCreateAnAccountPage</b><br>Test class: com.qa.planfirmatechnologies.OrderFlow</td>
-<td></td>
-<td>1</td>
-<td>com.qa.planfirmatechnologies.OrderFlow@3fb1549b</td></tr>
-<tr>
-<td title='com.qa.planfirmatechnologies.OrderFlow.moveToFitnessEquipmentPage()'><b>moveToFitnessEquipmentPage</b><br>Test class: com.qa.planfirmatechnologies.OrderFlow</td>
-<td></td>
-<td>2</td>
-<td>com.qa.planfirmatechnologies.OrderFlow@3fb1549b</td></tr>
-<tr>
-<td title='com.qa.planfirmatechnologies.OrderFlow.placeOrder()'><b>placeOrder</b><br>Test class: com.qa.planfirmatechnologies.OrderFlow</td>
-<td></td>
-<td>20</td>
-<td>com.qa.planfirmatechnologies.OrderFlow@3fb1549b</td></tr>
-<tr>
-<td title='com.qa.planfirmatechnologies.OrderFlow.selectCategory()'><b>selectCategory</b><br>Test class: com.qa.planfirmatechnologies.OrderFlow</td>
-<td></td>
-<td>3</td>
-<td>com.qa.planfirmatechnologies.OrderFlow@3fb1549b</td></tr>
+<td>com.qa.planfirmatechnologies.OrderFlow@483f6d77</td></tr>
 </table><p>
 </body>
 </html>
